@@ -31,7 +31,7 @@ In order to login to Netlify and link our GitHub repository to a new Netlify Sit
 The [Netlify CLI](https://docs.netlify.com/cli/get-started/) let's you run a local development server, run local builds, and deploy your site.
 Next you'll configure a `package.json` file to install `netlify-cli` and define `scripts` to run commands.
 
-## Create a package.json File
+# Create a package.json File
 
 Create a new file in your empty repository called `package.json` and save the following content to it:
 
@@ -44,6 +44,7 @@ Create a new file in your empty repository called `package.json` and save the fo
     "netlify-login": "netlify login",
     "netlify-logout": "netlify logout",
     "netlify-link": "netlify link",
+    "netlify-unlink": "netlify unlink",
     "netlify-status": "netlify status",
     "start": "netlify dev"
   }
@@ -56,7 +57,7 @@ Please update to the [latest version](https://www.npmjs.com/package/netlify-cli)
 In `package.json` you defined your development dependency on `netlify-cli` and configured a set of scripts to run `netlify` commands.
 Next you'll configure a `netlify.toml` file to define your `build` and `dev` settings.
 
-## Create a netlify.toml File
+# Create a netlify.toml File
 
 Create a new file in the root of your repository called `netlify.toml` and save the following content to it:
 
@@ -80,7 +81,7 @@ Just like in the `[build]` section, the `publish` setting defines where Netlify 
 This section also has a `command` setting can be set to run the local development server for your framework.
 In this case you are only serving up static files and Netlify will handle that for you by default.
 
-## Create src/ Directory
+# Create src/ Directory
 
 Since we configured Netlify to serve development content from a `src/` directory you can create that directory with the `mkdir src/` command in your terminal or through your code editor.
 Next create a new HTML in `src/index.html` with and save the following content to it:
@@ -105,7 +106,7 @@ Next create a new HTML in `src/index.html` with and save the following content t
 
 In this step you've created a simple `Hello, world!` webpage that you can deploy to Netlify.
 
-## Create a .gitignore File
+# Create a .gitignore File
 
 Before installing your dependencies you should create a `.gitignore` file in the root directory and save the following content to it:
 
@@ -116,7 +117,7 @@ dist
 
 This will prevent your `node_modules` and `dist` directories from being included in your `git commit` later.
 
-## Git Commit and Git Push
+# Git Commit and Git Push
 
 You now have all the files you need to deploy to Netlify.
 Take a moment to add, commit, and push your changes to GitHub with the following commands in your terminal:
@@ -127,13 +128,13 @@ git commit -m "My first Netlify Site"
 git push origin master
 ```
 
-## Install your dependencies
+# Install your dependencies
 
 Now you are ready to run `npm install` to install `netlify-cli`.
 This step will create the `node_modules` directory for your dependencies.
 Once `npm install` completes it will output a summary of the installation.
 
-## Start your local development server
+# Start your local development server
 
 Start `netlify dev` by running your `npm start` command you defined in `package.json`.
 Netlify Dev will detect that no framework was defined and serve static content from your `publish` directory which is `src/` in this case.
@@ -143,12 +144,14 @@ You should now see the rendered version of your `index.html` file in your browse
 At this point you have a local development environment running, but have not yet connected your repository to Netlify.
 Kill the local development server by holding the "control" key and pressing the "c" key, also referred to as `^C`.
 
-## Netlify Login
+# Netlify Login
 
 Next login to Netlify from your terminal with `npm run netlify-login` which will run `netlify login` as defined in your `package.json` file.
 This will open a browser window on Netlify where you can complete the login process and authorize the connection between Netlify CLI and Netlify.
 
-## Create the Netlify Site
+Use `npm run netlify-logout` if need to to logout in order to login as another user.
+
+# Create the Netlify Site
 
 From your [Netlify Team Overview](https://app.netlify.com/) screen click [New site from Git](https://app.netlify.com/start) and following the instructions.
 First you'll be asked to "Connect to your Git provider".
@@ -162,13 +165,34 @@ Click the "Deploy site" button to trigger the first deploy of your new Netlify S
 This will bring you back to the Site overview and you'll see a "Production deploys" section with your build `Starting Up`.
 Click on your build from the "Production deploys" list which will take you to the "Deploy in progress" screen.
 Here you can watch the "Deploy log" as your site runs your build command.
+If there is an error, the deploy will fail and you can examine the log to determine the failure, make changes, and push those changes to GitHub to trigger a new build.
+If the build is successful, you'll see "Site is live ✨" printed in the log.
+Click the link to back to "< Deploys" near the top of the page.
+Here you will see that Netlify has generated a unique site name and url for you in a "Deploys for" section.
+Click the link to your `netlify.app` site on the Deploys page.
+This will open a new window where you will see the same "Hello, world!" page you saw in local development earlier now live in production on Netlify.
+Pat yourself on the back, you did it!
 
-## Netlify Link
+# Netlify Link
 
-Now it's time to link your GitHub repository to a new Netlify Site.
-Run `npm run netlify-link` in your terminal and follow the prompts to create the new site.
-`netlify link` will connect the current folder to a site on Netlify.
+But wait, there's more...
+Now it's time to link your GitHub repository clone on your local computer to the new Netlify Site.
+Run `npm run netlify-link` in your terminal and follow the prompts to link the new site.
 When prompted, select `Use current git remote origin` which will be the default selection and press the "Enter" key.
+
+Use `npm run netlify-unlink` if need to to unlink the current site in order to link as another site.
+
+# Netlify Status
+
+Now that you are logged into Netlify and have linked your Netlify Site you can use `npm run netlify-status` to show you your current logged in and linked status.
+
+# Update your new Netlify Site
+
+Well, you'd probably like to update your site, so go ahead and get the development server running again with `npm start`.
+Now make some changes to your `src/index.html` and reload the page in your web browser.
+When you are satisfied with your changes in local development then add, commit, and push your changes to the `master` branch to trigger a new deploy.
+Head over the your Netlify Site to view the Deploy Logs.
+Once your site is live you can view the changes in production.
 
 # Typical Workflow
 
