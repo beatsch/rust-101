@@ -119,9 +119,10 @@ This will prevent your `node_modules` and `dist` directories from being included
 ## Git Commit and Git Push
 
 You now have all the files you need to deploy to Netlify.
-Take a moment to commit our changes and push them up to GitHub with the following commands in your terminal:
+Take a moment to add, commit, and push your changes to GitHub with the following commands in your terminal:
 
 ```
+git add -A
 git commit -m "My first Netlify Site"
 git push origin master
 ```
@@ -156,6 +157,11 @@ This will open an new window to authorize the connection between Netlify and Git
 Once authorized, Netlify will ask you to "Pick a repository".
 Find and select the repository you created for this project.
 Now you will be asked to configure the "Site settings, and deploy!".
+Since you created a `netlify.toml` file and pushed your changes to GitHub you'll noticed that this screen is already configure with your settings.
+Click the "Deploy site" button to trigger the first deploy of your new Netlify Site!
+This will bring you back to the Site overview and you'll see a "Production deploys" section with your build `Starting Up`.
+Click on your build from the "Production deploys" list which will take you to the "Deploy in progress" screen.
+Here you can watch the "Deploy log" as your site runs your build command.
 
 ## Netlify Link
 
