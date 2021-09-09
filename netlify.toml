@@ -1,0 +1,7 @@
+[build]
+base = "/"
+publish = "dist/"
+command = "cp -R src/* dist/"
+
+[dev]
+publish = "src/"
