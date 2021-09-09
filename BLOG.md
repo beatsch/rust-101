@@ -62,11 +62,11 @@ Create a new file in the root of your repository called `netlify.toml` and save 
 
 ```
 [build]
-publish = "dist/"
-command = "mkdir -p dist/ && cp -R src/* dist/"
+publish = "dist"
+command = "mkdir -p dist && cp -R src/* dist/"
 
 [dev]
-publish = "src/"
+publish = "src"
 ```
 
 The `[build]` section tells Netlify how to build your project.
