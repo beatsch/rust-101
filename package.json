@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "netlify-cli": "6.8.9"
+    "netlify-cli": "*"
   },
   "scripts": {
     "netlify-login": "netlify login",

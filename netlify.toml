@@ -1,6 +1,6 @@
 [build]
-publish = "dist"
 command = "mkdir -p dist && cp -R src/* dist/"
+publish = "dist"
 
 [dev]
 publish = "src"
