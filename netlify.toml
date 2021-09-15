@@ -1,6 +1,5 @@
 [build]
-# command = "mkdir -p dist && cp -R src/* dist/"
-command = "echo 'FAIL' && exit 1"
+command = "mkdir -p dist && cp -R src/* dist/"
 publish = "dist"
 
 [dev]
