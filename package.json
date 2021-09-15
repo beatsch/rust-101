@@ -3,11 +3,6 @@
     "netlify-cli": "*"
   },
   "scripts": {
-    "netlify-login": "netlify login",
-    "netlify-logout": "netlify logout",
-    "netlify-link": "netlify link",
-    "netlify-unlink": "netlify unlink",
-    "netlify-status": "netlify status",
     "start": "netlify dev"
   }
 }
