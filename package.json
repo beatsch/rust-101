@@ -3,6 +3,7 @@
     "netlify-cli": "*"
   },
   "scripts": {
+    "build": "mkdir -p dist && cp -R src/* dist/",
     "start": "netlify dev"
   }
 }
