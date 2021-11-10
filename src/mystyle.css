@@ -7,6 +7,13 @@ body {
   background-position: center 74%; 
 }
 
+@media screen (min-width: 320px) and (max-width: 768px) {
+  .element {
+    background-size: left;
+    background-position: center 24%; 
+  }
+}
+
 
 
 /* Add a background color to the top navigation */
@@ -18,17 +25,27 @@ body {
   margin-bottom: 1%;
   text-align: center;
 }
+ 
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: center;
+  float: left;
   color: black;
   text-align: center;
   padding: 220px 16px;
   text-decoration: none;
   font-size: 17px;
   }
-  
+
+
+ 
+
+  /* Style the navigation menu */
+.topnav {
+  position: middle;
+}
+
+
  
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -36,11 +53,24 @@ body {
   color: white;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: black;
-  color: white;
+
+/* Style navigation menu links */
+.topnav a {
+  color:black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
+
+/* Style the hamburger menu */
+.topnav a.icon {
+ 
+  
+  position: absolute;
+ 
+}
+
 
 
 .parallax {
@@ -64,7 +94,7 @@ body {
 
 
 div.transbox {
-  margin: 90px;
+  margin: 9px;
   background-color: #ffffff;
   opacity: 0.8;
 }
@@ -75,7 +105,11 @@ div.transbox p {
   color: #000000;
 }
 
-
+@media screen (min-width: 320px) and (max-width: 768px) {
+  .element {
+    margin: 30px;
+  }
+}
 
 
 small {
@@ -127,7 +161,7 @@ padding: 15px;
 
 div.logosmaller {
 float: right;
-padding: 15px;
+padding: 12%;
 }
 
 
@@ -259,15 +293,5 @@ button[type="submit"]:hover {
     pointer-events: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
