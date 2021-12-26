@@ -185,8 +185,8 @@ div.gallery img {
 
 
 div.desc {
-  padding: 2px;
-  text-align: center;
+  padding: 8px;
+  text-align: absolute;
   color: black;
   margin-bottom: 1%;
   font-size: 32%;
