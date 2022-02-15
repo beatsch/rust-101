@@ -72,7 +72,6 @@ body {
 }
 
 
-
 .parallax {
   /* The image used */
   color: white;
@@ -118,6 +117,11 @@ small {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+big {
+  font-size: larger;
+  color: grey;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
 
 div.center {
@@ -130,6 +134,15 @@ text-align: right;
 margin: 40px;
 }
 
+div.left {
+  text-align: left;
+  margin: 40px;
+  }
+
+div.datenschutz {
+  text-align: left;
+  margin: 40px;
+}
 
 .grid-container {
   display: grid;
@@ -164,7 +177,20 @@ float: right;
 padding: 12%;
 }
 
+.button {
+  background-color: lightcoral; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+.button1 {width: 250px;}
 
 
 
@@ -185,11 +211,11 @@ div.gallery img {
 
 
 div.desc {
-  padding: 8px;
-  text-align: absolute;
+  padding: 15px;
+  text-align: center;
   color: black;
   margin-bottom: 1%;
-  font-size: 32%;
+  font-size: 20%;
   }
 
 
@@ -293,5 +319,4 @@ button[type="submit"]:hover {
     pointer-events: none;
   }
 }
-
 
