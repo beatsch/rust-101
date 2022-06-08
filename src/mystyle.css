@@ -98,11 +98,18 @@ div.transbox {
   opacity: 0.8;
 }
 
+div.transbox {
+  margin: 9px;
+  background-color: #ffffff;
+  opacity: 1.0;
+}
+
 div.transbox p {
   margin: 25%;
   font-weight: bold;
   color: #000000;
 }
+
 
 @media screen (min-width: 320px) and (max-width: 768px) {
   .element {
