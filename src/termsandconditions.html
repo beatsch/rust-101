@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uff-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rust</title>
+    <link rel="stylesheet" href="mystyle.css"><style>
+      
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: blanchedalmond;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: brown;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: black;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+</style>
+</head>
+<body>
+  
+  
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a class="active" href="index.html">Start</a>
+    <a href="uebermich.html">About me</a>
+    <a href="rates.html">Rates</a>
+    <a href="contact.html">Contact</a>
+  
+  </div>
+  
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+    <div class="content">
+      <div class="topnav">
+          <a class="active" href="index.html">Start</a>
+          <a href="aboutme.html">About me</a>
+          <a href="rates.html">Rates</a>
+          <a href="contact.html">Contact</a>
+  
+    </div>
+
+   <div class="transbox">
+   <div class="parallax">
+
+      <div style="background-color:white;font-size:30px">
+        <div class="center">
+        
+    
+            
+                   
+  
+         <h6> <small>
+             <h1 style="color: black; font-family: Verdana, sans-serif"> Terms and Conditions</h1> <br>
+             <h2 style="color:dimgrey; font-family: Bradley Hand, cursive">Rust</h2> <br>
+                                     
+              
+         <h5>Jay Krynicki is a member of the Netherlands Institute of Psychologists (NIP). <br>
+          My KVK number: 84183640 <br>
+          <br>
+          Rust Mental Health adheres to the NIP<a href="file:///Users/beatrixzoellner/Desktop/janrust/NIP.pdf" style="color: dimgrey;">code of ethics</a><br><br>
+          </h5>
+
+</small>
+         </h6>
+        </div>
+      </div>
+      </div>
+        
+               
+               
+                              
+  <!-- Outside transparentbox -->
+  <div class="center">
+  
+    <h4> <small style="color:white">
+      
+      Rust<br>
+      <br>
+      Jay Krynicki<br>
+      MScClincial Psychology<br>
+      ​<br>
+      jay@restmentalhealth.nl<br>
+      
+      Instagram Account:  <br> </small></h4>
+      <br><br>
+    </div>
+    
+    
+    </div>
+  </div>
+  
+  <!--Impressum -->
+  <div class="center">
+    <h4> <small>
+    
+    <b><a href="termsandconditions.html" target="_blank" style="color:white" >Terms and Conditions</a></b>
+    <b><a href="copyright.html" target="_blank" style="color:white" >Copyright</a></b>
+    <b><a href="privacypolicy.html" target="_blank" style="color:white" >Privacy Policy</a></b>
+  </small>
+    </h4>
+  </div>
+  
+  <!--Impressum ende -->
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+     
+  
+  
+    
+  
+  </body>
+  </html> 
+  

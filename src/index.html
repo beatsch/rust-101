@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uff-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rust</title>
+    <link rel="stylesheet" href="mystyle.css"><style>
+      
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: blanchedalmond;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: brown;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: black;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+</style>
+</head>
+<body>
+  
+  
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a class="active" href="index.html">Start</a>
+  <a href="uebermich.html">About me</a>
+  <a href="rates.html">Rates</a>
+  <a href="contact.html">Contact</a>
+
+</div>
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+  <div class="content">
+    <div class="topnav">
+        <a class="active" href="index.html">Start</a>
+        <a href="aboutme.html">About me</a>
+        <a href="rates.html">Rates</a>
+        <a href="contact.html">Contact</a>
+
+  </div>
+<!-- Inside transparentbox -->
+  <div class="transbox">
+   <div class="parallax">
+
+    <div style="background-color:yellow;font-size:30px">
+      <div class="center">
+        <span>
+          <img src="logo.png" alt="rust logo">
+        </span>
+      </div>
+            
+                   
+  
+      <h6> 
+        <small>
+          <h1 style="color: black;"> Jay Krynicki</h1>
+            <h2 style="color: black;">MSc Clinical Psychology </h2> 
+            <br>Hey there, I'm Jay! I'm a Canadian living in The Hague offering therapy and counseling in an easy-going and relatable way. 
+            <br>I offer a safe, non-judgmental, and unbiased space and conduct my sessions in clear English.
+          <div class="right">
+                                    
+            <form action="aboutme.html">
+              <button class="button button1">About me</button><br>
+            </form>
+                      
+          </div>
+          <h2 style="color: black;">  My approach  </h2> 
+          <br>I believe that having a great therapeutic relationship is really important for a good outcome in therapy. With my education and work experience, I aim to be the psychologist that not only recites word for word what they learned in university textbooks but one that integrates therapeutic techniques into tailored sessions all while making it feel natural and comfortable for the client.
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="center">
+            <h6> 
+            <h2 style="color: black;"> Contact me </h2>
+            <h5> Here you can contact me for questions and your free intake.  <br> <br> </h5>
+            
+            <section>
+              <div class="container">
+               <form action="https://formspree.io/f/xleazlkj" method="POST" id="my-form" target="_blank">
+      
+                <div class="form-group">
+                  <label for="firstName"> First name</label>
+                  <input type="text" id="firstName" name="firstName">
+                </div>
+      
+                <div class="form-group">
+                 <label for="latsName"> Last name</label>
+                 <input type="text" id="lastName" name="lastName">
+                </div>
+      
+                <div class="form-group">
+                 <label for="email">Email </label>
+                 <input type="email" id="email" name="email">
+                </div>
+      
+                <div class="form-group">
+                  <label for="massage">Enter message</label>
+                 <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                </div>
+      
+                <button type="submit">Absenden</button>
+               </form>
+              </div>
+              <div id="status"></div>
+            </section>
+        </small>
+      </h6>
+    </div>
+   </div>  
+   
+  </div>
+
+<!-- Outside transparentbox -->
+  <div class="center">
+  
+  <h4> <small style="color:white">
+    
+    Rust<br>
+    <br>
+    Jay Krynicki<br>
+    MScClincial Psychology<br>
+    ​<br>
+    jay@restmentalhealth.nl<br>
+    
+    Instagram Account:  <br> </small></h4>
+    <br><br>
+  </div>
+  
+  
+  </div>
+</div>
+
+<!--Impressum -->
+<div class="center">
+  <h4> <small>
+  
+  <b><a href="termsandconditions.html" target="_blank" style="color:white" >Terms and Conditions</a></b>
+  <b><a href="copyright.html" target="_blank" style="color:white" >Copyright</a></b>
+  <b><a href="privacypolicy.html" target="_blank" style="color:white" >Privacy Policy</a></b>
+</small>
+  </h4>
+</div>
+
+<!--Impressum ende -->
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+
+
+  
+
+</body>
+</html> 
