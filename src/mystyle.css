@@ -93,13 +93,13 @@ body {
 
 
 div.transbox {
-  margin: 9px;
+  margin: 3px;
   background-color: transparent;
   opacity: 0.8;
 }
 
 div.transbox p {
-  margin: 25%;
+  margin: 4%;
   font-weight: bold;
   color: #000000;
 }
