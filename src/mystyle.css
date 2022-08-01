@@ -252,13 +252,13 @@ section {
   flex-direction: column;
 }
 .container {
-  width: 90%;
-  max-width: 500px;
+  width: 95%;
+  max-width: 520px;
   margin: 0 auto;
   padding: 22px;
   box-shadow: 0px 0px 20px #00000010;
   background-color: yellow;
-  border-radius: 8px;
+  border-radius: 6px;
   margin-bottom: 20px;
 }
 .form-group {
