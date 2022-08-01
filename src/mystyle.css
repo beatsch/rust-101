@@ -276,7 +276,8 @@ section {
 }
 
 textarea {
-  resize: horizontal;
+  resize: both;
+  overflow: auto;
 }
 button[type="submit"] {
   width: 100%;
