@@ -257,7 +257,7 @@ section {
   margin: 0 auto;
   padding: 22px;
   box-shadow: 0px 0px 20px #00000010;
-  background-color: yellow;
+  background-color: white;
   border-radius: 6px;
   margin-bottom: 20px;
 }
@@ -276,7 +276,7 @@ section {
 }
 
 textarea {
-  resize: vertical;
+  resize: horizontal;
 }
 button[type="submit"] {
   width: 100%;
