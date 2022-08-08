@@ -280,7 +280,7 @@ textarea {
   overflow: auto;
 }
 button[type="submit"] {
-  width: 100%;
+  width: 50%;
   border: none;
   outline: none;
   padding: 20px;
