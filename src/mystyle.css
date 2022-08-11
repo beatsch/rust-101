@@ -78,7 +78,7 @@ body {
 
   /* Full height */
   height: 60%; 
-  margin: 2%;
+  margin: 1%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -93,13 +93,13 @@ body {
 
 
 div.transbox {
-  margin: 3px;
+  margin: 2px;
   background-color: transparent;
   opacity: 0.95;
 }
 
 div.transbox p {
-  margin: 3%;
+  margin: 2%;
   font-weight: bold;
   color: #000000;
 }
