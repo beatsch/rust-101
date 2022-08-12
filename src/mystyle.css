@@ -125,6 +125,7 @@ big {
 
 div.footer {
   color: white;
+  font-color: white;
 }
 
 
@@ -178,6 +179,11 @@ height: auto;
 div.logosmaller {
 float: right;
 padding: 12%;
+}
+
+div.logo {
+float: right;
+padding: 22%;
 }
 
 
