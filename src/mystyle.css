@@ -114,13 +114,13 @@ div.transbox p {
 small {
   font-size: smaller;
   color: grey;
-  font-family:  Lato, Helvetica, Roboto, sans-serif;
+  font-family:  Lato, Helvetica, sans-serif;
 }
 
 big {
   font-size: larger;
   color: grey;
-  font-family:  Lato, Helvetica, Roboto, sans-serif;
+  font-family:  Lato, Helvetica, sans-serif;
 }
 
 div.footer {
@@ -337,6 +337,6 @@ button[type="submit"]:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Lato, Helvetica, Roboto, sans-serif;
+  font-family: Lato, Helvetica, sans-serif;
 }
 
