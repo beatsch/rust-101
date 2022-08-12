@@ -68,8 +68,21 @@
 
 
 </style>
+      <script>
+     function todayDate(){
+        var d = new Date();
+        var n = d.getFullYear() + "  ";
+        return document.getElementById("date").innerHTML = n;
+      }
+   </script>
 </head>
-<body>
+<body onload=todayDate()>
+   <table bordered>
+       <tr>
+         
+       </tr>
+ 
+   </table>
   
   
   <div id="mySidebar" class="sidebar">
@@ -186,7 +199,9 @@
      
   
   
-    
+     <footer>
+      &copy; <em id="date"></em>Rust Mental Health All Rights Reserved
+    </footer>
   
   </body>
   </html> 
