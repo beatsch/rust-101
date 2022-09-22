@@ -254,9 +254,9 @@ section {
 .container {
   width: 90%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 5 auto;
   padding: 20px;
-  box-shadow: 0px 0px 20px #00000010;
+  box-shadow: 2px 2px 20px #00000010;
   background-color: white;
   border-radius: 8px;
   margin-bottom: 20px;
