@@ -121,13 +121,13 @@ div.transbox p {
 small {
   font-size: smaller;
   color: grey;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Lato", "Helvetica", monospace;
 }
 
 big {
   font-size: larger;
   color: grey;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Lato", "Helvetica", sans-serif;
 }
 
 
@@ -185,7 +185,7 @@ padding: 12%;
 }
 
 .button {
-  background-color: lightcoral; 
+  background-color: lightblue; 
   border: none;
   color: white;
   padding: 15px 32px;
