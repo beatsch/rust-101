@@ -330,3 +330,12 @@ button[type="submit"]:hover {
 h1, h2, h3, h4, h5, h6 { 
   font-family: Lato, Helvetica, sans-serif;
 }
+
+
+div.janspic {
+float: right;
+padding: 15px;
+max-width: 50%;
+height: auto;
+}
+
