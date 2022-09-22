@@ -1,5 +1,5 @@
 body {
-  background-image: url("bg.jpeg");
+  background-image: url("bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -18,7 +18,7 @@ body {
 
 /* Add a background color to the top navigation */
 .topnav {
-  background-color: black;
+  background-color: whitesmoke;
   overflow: hidden;
   margin: 20%;
   margin-top: 1%;
@@ -56,7 +56,7 @@ body {
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color:black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -78,7 +78,7 @@ body {
 
   /* Full height */
   height: 60%; 
-  margin: 1%;
+  margin: 8%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -93,20 +93,27 @@ body {
 
 
 div.transbox {
-  margin: 2px;
-  background-color: transparent;
-  opacity: 0.9678;
+  margin: 9px;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+div.faketransbox {
+  margin: 9px;
+  background-color: #ffffff;
+  opacity: 1.0;
 }
 
 div.transbox p {
-  margin: 0.5%;
+  margin: 25%;
   font-weight: bold;
   color: #000000;
 }
 
+
 @media screen (min-width: 320px) and (max-width: 768px) {
   .element {
-    margin: 1px;
+    margin: 30px;
   }
 }
 
@@ -114,18 +121,13 @@ div.transbox p {
 small {
   font-size: smaller;
   color: grey;
-  font-family:  Lato, Helvetica, sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 big {
   font-size: larger;
   color: grey;
-  font-family:  Lato, Helvetica, sans-serif;
-}
-
-div.footer {
-  color: white;
-  font-color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 
@@ -141,7 +143,7 @@ margin: 40px;
 
 div.left {
   text-align: left;
-  margin: 4px;
+  margin: 40px;
   }
 
 div.datenschutz {
@@ -160,20 +162,21 @@ div.datenschutz {
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 3px 0;
+  padding: 30px 0;
   font-size: 30px;
 
 }
 
 
 
+div.image1ale {
+float: left;
+padding: 15px;
+}
 
-
-div.janspic {
+div.image2ale {
 float: right;
 padding: 15px;
-max-width: 50%;
-height: auto;
 }
 
 div.logosmaller {
@@ -181,37 +184,26 @@ float: right;
 padding: 12%;
 }
 
-div.logo {
-float: right;
-padding: 2%;
-  max-width: 80%;
-    max-height: 20%;
-}
-
-
-  
-
 .button {
-  background-color: rgb(0, 102, 204); 
+  background-color: lightcoral; 
   border: none;
   color: white;
-  padding: 1px 2px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
-  margin: 1px 1px;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
-  
 }
 
-.button1 {width: 55px;}
+.button1 {width: 250px;}
 
 
 
 div.gallery {
    line-height:0;
-   -webkit-column-count:3; /* split it into 5 columns */
+   -webkit-column-count:3; /* split it into 3 columns */
    -webkit-column-gap:5px; /* give it a 5px gap between columns */
    -moz-column-count:3;
    -moz-column-gap:5px;
@@ -226,11 +218,11 @@ div.gallery img {
 
 
 div.desc {
-  padding: 15px;
+  padding: 6px;
   text-align: center;
   color: black;
-  margin-bottom: 1%;
-  font-size: 20%;
+  margin-bottom: 2px;
+  font-size: 34%;
   }
 
 
@@ -245,14 +237,14 @@ img {
 
 /* submit form */
 * {
-  padding: 10px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 section {
   height: 100vh;
-  width: 80%;
+  width: 100%;
   
   display: flex;
   align-items: center;
@@ -260,14 +252,14 @@ section {
   flex-direction: column;
 }
 .container {
-  width: 98%;
-  max-width: 540px;
+  width: 90%;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 12px;
-  box-shadow: 0px 0px 2px #00000010;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
   background-color: white;
-  border-radius: 1px;
-  margin-bottom: 2px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 .form-group {
   width: 100%;
@@ -284,11 +276,10 @@ section {
 }
 
 textarea {
-  resize: none;
-  overflow: auto;
+  resize: vertical;
 }
 button[type="submit"] {
-  width: 50%;
+  width: 100%;
   border: none;
   outline: none;
   padding: 20px;
@@ -335,8 +326,3 @@ button[type="submit"]:hover {
     pointer-events: none;
   }
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Lato, Helvetica, sans-serif;
-}
-
