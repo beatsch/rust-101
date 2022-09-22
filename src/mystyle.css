@@ -254,7 +254,7 @@ section {
 .container {
   width: 90%;
   max-width: 500px;
-  margin: 5 auto;
+  margin: 0 auto;
   padding: 20px;
   box-shadow: 2px 2px 20px #00000010;
   background-color: white;
