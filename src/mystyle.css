@@ -169,15 +169,6 @@ div.datenschutz {
 
 
 
-div.image1ale {
-float: left;
-padding: 15px;
-}
-
-div.image2ale {
-float: right;
-padding: 15px;
-}
 
 div.logosmaller {
 float: right;
@@ -235,7 +226,7 @@ img {
 
 
 
-/* submit form */
+* submit form */
 * {
   padding: 0;
   margin: 0;
@@ -256,7 +247,7 @@ section {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 2px 2px 20px #00000010;
+  box-shadow: 0px 0px 20px #00000010;
   background-color: white;
   border-radius: 8px;
   margin-bottom: 20px;
