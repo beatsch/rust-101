@@ -49,7 +49,7 @@ body {
  
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: black;
+  background-color: mediumblue;
   color: white;
 }
 
@@ -185,7 +185,7 @@ padding: 12%;
 }
 
 .button {
-  background-color: lightblue; 
+  background-color: mediumblue; 
   border: none;
   color: white;
   padding: 15px 32px;
