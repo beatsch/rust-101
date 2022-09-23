@@ -95,7 +95,7 @@ body {
 div.transbox {
   margin: 9px;
   background-color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.999;
 }
 
 div.faketransbox {
@@ -319,7 +319,7 @@ button[type="submit"]:hover {
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Lato, Helvetica, monospace;
 }
 
 
