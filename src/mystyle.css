@@ -330,3 +330,11 @@ max-width: 25%;
 height: auto;
 }
 
+div.nip {
+float: right;
+padding: 17px;
+max-width: 10%;
+height: auto;
+}
+
+
