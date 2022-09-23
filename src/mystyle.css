@@ -16,16 +16,7 @@ body {
 
 
 
-/* Add a background color to the top navigation */
-.topnav {
-  background-color: whitesmoke;
-  overflow: hidden;
-  margin: 20%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  text-align: center;
-}
- 
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -40,36 +31,7 @@ body {
 
  
 
-  /* Style the navigation menu */
-.topnav {
-  position: middle;
-}
 
-
- 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: mediumblue;
-  color: white;
-}
-
-
-/* Style navigation menu links */
-.topnav a {
-  color:black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
- 
-  
-  position: absolute;
- 
-}
 
 
 .parallax {
@@ -115,14 +77,14 @@ div.transbox p {
 
 small {
   font-size: smaller;
-  color: grey;
+  color: black;
   font-family: "Lato", "Helvetica", monospace;
 }
 
 big {
   font-size: larger;
-  color: grey;
-  font-family: "Lato", "Helvetica", sans-serif;
+  color: black;
+  font-family: "Lato", "Helvetica", monospace;
 }
 
 
