@@ -95,14 +95,9 @@ body {
 div.transbox {
   margin: 9px;
   background-color: #ffffff;
-  opacity: 0.999;
-}
-
-div.faketransbox {
-  margin: 9px;
-  background-color: #ffffff;
   opacity: 1.0;
 }
+
 
 div.transbox p {
   margin: 25%;
