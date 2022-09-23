@@ -331,6 +331,7 @@ height: auto;
 }
 
 div.nip {
+  float: center;
 padding: 10px;
 max-width: 3%;
 height: auto;
