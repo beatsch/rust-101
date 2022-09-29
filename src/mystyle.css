@@ -278,4 +278,7 @@ max-width: 3%;
 height: auto;
 }
 
+table {
+    border-spacing: 10;
+}
 
