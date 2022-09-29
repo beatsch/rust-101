@@ -18,22 +18,6 @@ body {
 
 
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 220px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  }
-
-
- 
-
-
-
-
 .parallax {
   /* The image used */
   color: white;
@@ -288,8 +272,8 @@ height: auto;
 }
 
 div.nip {
-  float: center;
-padding: 10px;
+  float: left;
+padding: 12px;
 max-width: 3%;
 height: auto;
 }
