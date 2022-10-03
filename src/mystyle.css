@@ -288,7 +288,8 @@ table {
 .container {
   width: 98%;
   margin: 0 auto;
-  padding: 0 35px;
+  padding: 0 42px;
   position: relative;
   height: 500px;
+  opacity: 100%
 }
