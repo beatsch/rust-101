@@ -300,7 +300,7 @@ table {
   width: auto;
   margin: 0 auto;
   padding: 0 auto;
-  position: relative;
+  position: left;
   height: auto;
   opacity: 1;
 }
