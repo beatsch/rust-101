@@ -4,6 +4,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font: black;
+  font-family: "Lato", "Helvetica", monospace;
   background-position: center 74%; 
 }
 
@@ -49,6 +50,7 @@ div.transbox p {
   margin: 25%;
   font-weight: bold;
   color: #000000;
+  font-family: "Lato", "Helvetica", monospace;
 }
 
 
@@ -125,6 +127,7 @@ padding: 12%;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-family: "Lato", "Helvetica", monospace;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -217,7 +220,7 @@ button[type="submit"] {
   padding: 20px;
   font-size: 24px;
   border-radius: 8px;
-  font-family: "Lato";
+  font-family: "Lato", "Helvetica", monospace;
   color: rgb(27, 166, 247);
   text-align: center;
   cursor: pointer;
@@ -260,7 +263,7 @@ button[type="submit"]:hover {
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  font-family: Lato, Helvetica, monospace;
+  font-family: "Lato", "Helvetica", monospace;
 }
 
 
