@@ -286,9 +286,9 @@ height: auto;
 }
 
 div.nip {
-  float: left;
-padding: 12px;
-max-width: 3%;
+  float: relative;
+padding: auto;
+max-width: 4.2%;
 height: auto;
 }
 
