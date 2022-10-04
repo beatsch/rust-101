@@ -339,12 +339,11 @@ button[type="submit1"] {
   font-size: 20px;
   border-radius: 4px;
   font-family: "Lato", "Helvetica", monospace;
-  color: background-color;
+  color: rgb(27, 166, 247);
   text-align: center;
   cursor: pointer;
   margin-top: 10px;
   transition: 0.3s ease background-color;
 }
 
-
-
+  
