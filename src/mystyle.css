@@ -305,6 +305,19 @@ max-width: 10%;
   opacity: 1;
 }
 
+div.nip3 {
+  float: center;
+
+  max-width: 14%;
+
+  width: auto;
+
+  position: center;
+  height: auto;
+  opacity: 1;
+}
+
+
 table {
     border-spacing: 10;
 }
