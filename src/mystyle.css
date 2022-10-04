@@ -292,6 +292,19 @@ max-width: 4.2%;
 height: auto;
 }
 
+div.nip2 {
+  float: right;
+
+max-width: 10%;
+
+  width: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+  position: left;
+  height: auto;
+  opacity: 1;
+}
+
 table {
     border-spacing: 10;
 }
