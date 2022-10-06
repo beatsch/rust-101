@@ -66,10 +66,28 @@
   	 padding: 16px;
 	}
   </style>
+
+<script>
+     function todayDate(){
+        var d = new Date();
+        var n = d.getFullYear() + "  ";
+        return document.getElementById("date").innerHTML = n;
+      }
+</script>
+    
+    
+
 </head>
+<body onload=todayDate()>
+   <table bordered>
+       <tr>
+         
+       </tr>
+ 
+   </table>
+
 	
 	
-<body>
 <!-- sidebar -->
 <div id="mySidebar" class="sidebar">
    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -106,11 +124,11 @@
   </div>
 	     
 	    
- 
+  <h6> 
 	<div class="container background">
 	<div id="transbox">
         <small>
-        	<h1 style="color: black;"> My Rates</h1> 
+        	<h1 style="color: black;"> Rates</h1>
                  
                  <p>Each session is 50 minutes. 
                      <br>
