@@ -6,144 +6,136 @@
     <title>Rust</title>
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="print.css" type="text/css" media="print">
-<style>
-      
+	
+  <style>
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	 .sidebar {padding-top: 15px;}
+ 	 .sidebar a {font-size: 18px;}
+	}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
+	.sidebar {
+ 	 height: 100%;
+	 width: 0;
+ 	 position: fixed;
+	 z-index: 1;
+	 top: 0;
+ 	 left: 0;
+ 	 background-color: black;
+	 overflow-x: hidden;
+  	 transition: 0.5s;
+  	 padding-top: 60px;
+	}
 
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+	.sidebar a {
+ 	 padding: 8px 8px 8px 32px;
+	 text-decoration: none;
+ 	 font-size: 25px;
+ 	 color: blanchedalmond;
+  	 display: block;
+ 	 transition: 0.3s;
+	}
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: blanchedalmond;
-  display: block;
-  transition: 0.3s;
-}
+	.sidebar a:hover {
+ 	 color: brown;
+	}
 
-.sidebar a:hover {
-  color: brown;
-}
+	.sidebar .closebtn {
+ 	 position: absolute;
+ 	 top: 0;
+ 	 right: 25px;
+ 	 font-size: 36px;
+ 	 margin-left: 50px;
+	}
 
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+	.openbtn {
+ 	 font-size: 20px;
+  	 cursor: pointer;
+ 	 background-color: black;
+ 	 color: whitesmoke;
+ 	 padding: 10px 15px;
+ 	 border: none;
+	}
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: black;
-  color: whitesmoke;
-  padding: 10px 15px;
-  border: none;
-}
+	.openbtn:hover {
+ 	 background-color: black;
+	}
 
-.openbtn:hover {
-  background-color: black;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-
-
-</style>
+	#main {
+  	 transition: margin-left .5s;
+  	 padding: 16px;
+	}
+  </style>
 </head>
+	
+	
 <body>
-
+<!-- sidebar -->
 <div id="mySidebar" class="sidebar">
    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
    <a class="active" href="index.html">Start</a>
    <a href="aboutme.html">About me</a>
    <a href="rates.html">Rates</a>
    <a href="contact.html">Contact</a>
-
- </div>
+</div>
   
-
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰ </button>  
   <div class="content">
-    <div class="topnav">
-        <a class="active" href="index.html"></a>
-        <a href="aboutme.html"></a>
-        <a href="rates.html"></a>
-        <a href="contact.html"></a>
-
-  </div>
+  <div class="topnav">
+    <a class="active" href="index.html"></a>
+    <a href="aboutme.html"></a>
+    <a href="rates.html"></a>
+    <a href="contact.html"></a>
+</div>
 
 
 <!-- Inside transparentbox -->
   <div class="transbox">
-   <div class="parallax">
+<!-- Parallax scrolling  -->
+  <div class="parallax">
 
-    <div style="background-color:white;font-size:30px">
-      <div class="center">
-        <span>
-           
-                <img src="logo.png" alt="rust logo"> 
-        </span>
-      </div>
+  <div style="background-color:white;font-size:30px">
+	  
+  <div class="center">	  
+  <span>
+  	<img src="logo.png" alt="rust logo"> 
+  </span>
+  </div>
 	     
 	    
-      <h6> 
-	      
-	      div class="container background">
-
-  <div id="transbox">
+  <h6> 
+	<div class="container background">
+	<div id="transbox">
         <small>
-          <h1 style="color: black;"> Jay Krynicki</h1>
+        	<h1 style="color: black;"> Jay Krynicki</h1>
 		
 		<div class="nip2">
-       <span>
-             <img src="Beeldmerk_NIP_Registerpsycholoog_rgb.jpg" alt="NIP">
-	    
-           </span>
-       </div>
+      		<span>
+             		<img src="Beeldmerk_NIP_Registerpsycholoog_rgb.jpg" alt="NIP">
+	    	</span>
+       		</div>
 	    
 		
-            <h2 style="color: black;">MSc Clinical Psychology </h2> 
+            	<h2 style="color: black;">MSc Clinical Psychology </h2> 
 		
 		<div class="nip2">
-       <span>
-            
-	     <img src="verified-international-academic-qualifications.1.png" alt="verified-international-academic-qualifications">
-           </span>
-       </div>
+       		<span>
+           		<img src="verified-international-academic-qualifications.1.png" alt="verified-international-academic-qualifications">
+           	</span>
+       		</div>
 	    
 		
-            <br>Hey there, I'm Jay! I'm a Canadian living in The Hague offering therapy and counseling in an easy-going and relatable way. 
-            <br>I offer a safe, non-judgmental, and unbiased space and conduct my sessions in clear English.
-          <div class="center">
-                                    
-            <form action="aboutme.html">
-              <button type="submit1">About me</button><br>
-            </form>
-		  
-		 
-</div>   
+            	<br>
+		Hey there, I'm Jay! I'm a Canadian living in The Hague offering therapy and counseling in an easy-going and relatable way. 
+           	<br>
+		I offer a safe, non-judgmental, and unbiased space and conduct my sessions in clear English.
+         
+		<div class="center">                 
+            	<form action="aboutme.html">
+              		<button type="submit1">About me</button><br>
+            	</form>
+		</div>   
                       
           </div>
           <h2 style="color: black;">  My approach  </h2> 
