@@ -6,77 +6,77 @@
     <title>Rust</title>
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="print.css" type="text/css" media="print">
-    <style>
-      
+	
+  <style>
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	 .sidebar {padding-top: 15px;}
+ 	 .sidebar a {font-size: 18px;}
+	}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
+	.sidebar {
+ 	 height: 100%;
+	 width: 0;
+ 	 position: fixed;
+	 z-index: 1;
+	 top: 0;
+ 	 left: 0;
+ 	 background-color: black;
+	 overflow-x: hidden;
+  	 transition: 0.5s;
+  	 padding-top: 60px;
+	}
 
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+	.sidebar a {
+ 	 padding: 8px 8px 8px 32px;
+	 text-decoration: none;
+ 	 font-size: 25px;
+ 	 color: blanchedalmond;
+  	 display: block;
+ 	 transition: 0.3s;
+	}
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: blanchedalmond;
-  display: block;
-  transition: 0.3s;
-}
+	.sidebar a:hover {
+ 	 color: brown;
+	}
 
-.sidebar a:hover {
-  color: brown;
-}
+	.sidebar .closebtn {
+ 	 position: absolute;
+ 	 top: 0;
+ 	 right: 25px;
+ 	 font-size: 36px;
+ 	 margin-left: 50px;
+	}
 
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+	.openbtn {
+ 	 font-size: 20px;
+  	 cursor: pointer;
+ 	 background-color: black;
+ 	 color: whitesmoke;
+ 	 padding: 10px 15px;
+ 	 border: none;
+	}
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: black;
-  color: whitesmoke;
-  padding: 10px 15px;
-  border: none;
-}
+	.openbtn:hover {
+ 	 background-color: black;
+	}
 
-.openbtn:hover {
-  background-color: black;
-}
+	#main {
+  	 transition: margin-left .5s;
+  	 padding: 16px;
+	}
+  </style>
 
-#main {
-  transition: margin-left .5s;
-  padding: 4px;
-}
-
-
-
-</style>
-      <script>
+<script>
      function todayDate(){
         var d = new Date();
         var n = d.getFullYear() + "  ";
         return document.getElementById("date").innerHTML = n;
       }
-   </script>
+</script>
+    
+    
+
 </head>
 <body onload=todayDate()>
    <table bordered>
@@ -85,35 +85,51 @@
        </tr>
  
    </table>
+
+	
+	
+<!-- sidebar -->
+<div id="mySidebar" class="sidebar">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+   <a class="active" href="index.html">Start</a>
+   <a href="aboutme.html">About me</a>
+   <a href="rates.html">Rates</a>
+   <a href="contact.html">Contact</a>
+</div>
   
-  
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a class="active" href="index.html">Start</a>
-    <a href="aboutme.html">About me</a>
-    <a href="rates.html">Rates</a>
-    <a href="contact.html">Contact</a>
-  
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+  <div class="content">
+  <div class="topnav">
+    <a class="active" href="index.html"></a>
+    <a href="aboutme.html"></a>
+    <a href="rates.html"></a>
+    <a href="contact.html"></a>
+</div>
+
+
+<!-- Inside transparentbox -->
+  <div class="transbox">
+<!-- Parallax scrolling  -->
+  <div class="parallax">
+
+  <div style="background-color:white;font-size:30px">
+	  
+  <div class="center">	    
+  <span>
+	<a href="https://www.rustmentalhealth.com/">
+  	<img alt="Rust Mental Health" src="logo.png" alt="rust logo"> 
+	</a>
+  </span>
   </div>
-  
-  
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">☰ </button>  
-    <div class="content">
-      <div class="topnav">
-          <a class="active" href="index.html"></a>
-          <a href="aboutme.html"></a>
-          <a href="rates.html"></a>
-          <a href="contact.html"></a>
-  
-    </div>
-
-   <div class="transbox">
-   <div class="parallax">
-
-     
-
-            <h1> Copyright</h1>
+	     
+	    
+  <h6> 
+	<div class="container background">
+	<div id="transbox">
+        <small>
+        	<h1 style="color: black;"> Copyright</h1>
+		
 		 &copy; <em id="date"></em>Rust Mental Health All Rights Reserved  </small>
 		
      <div class="nip2">
