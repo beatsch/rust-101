@@ -66,10 +66,24 @@
   	 padding: 16px;
 	}
   </style>
+<script>
+     function todayDate(){
+        var d = new Date();
+        var n = d.getFullYear() + "  ";
+        return document.getElementById("date").innerHTML = n;
+      }
+   </script>
+    
+    
+
 </head>
-	
-	
-<body>
+ <body onload=todayDate()>
+   <table bordered>
+       <tr>
+         
+       </tr>
+ 
+   </table>
 <!-- sidebar -->
 <div id="mySidebar" class="sidebar">
    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
